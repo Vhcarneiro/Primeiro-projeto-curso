@@ -1,0 +1,102 @@
+
+  @media (min-width: 1280px) {
+    #link-app { display: none;
+    }
+  }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
+    margin: left;
+}
+
+:root {
+   --primary: #225C72;
+   
+}
+
+h1 {
+    color:#162C41;
+    font-size: 32px;
+    font-weight: 600;
+    
+  }
+
+  h2 {
+    color: #2775A6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+   
+  }
+  p {
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: center;
+
+    /* A margin: 0 nos Hs serve para tirar todo o espaço de margem e o centralizar o texto, ele ir corretamente */
+  }
+  h1,h2,h3,h4,h5 {
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    
+  }
+  li {
+    margin: 5px;
+  }
+
+  li a{
+    background-color: #162C41;
+    text-decoration: none;
+    color: #ffff;
+    padding: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block; 
+    border-radius: 3px;
+        /* o display:block serve para colocar elementos com comporatmento em linha, como links, como blocos */
+  }
+
+  li a:hover {
+    background-color: var(--primary);
+  }
+
+    li a:active {
+        background-color: #666666;
+    }
+
+    /* A proprieddade border-radius 50% torna aempre um quadrado em circulo */
+    img {
+      border-radius: 50%; 
+      width: 100px;
+      border: solid 5px;
+      border-color: var(--primary);
+      
+    }
+
+div {
+    /* para telas responsivas eu devo usar o "width" % e o "width" max, alem do @media */
+    background-color: #ffff;
+    width: 80%;
+    max-width: 340px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    
+/* o padding sempre aumenta o tamanho do elemento que o contem */
+/* margem é de fora para dentro e padding de dentro para fora */
+}
+p#copywriter {
+    color: var(--primary)
+    
+}
+/* para centralizar um elemento, como o quadrado usado no exemplo, utilizamos a margin lft e right "auto"*/
